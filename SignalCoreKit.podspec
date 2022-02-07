@@ -31,7 +31,6 @@ A Swift & Objective-C library used by other Signal libraries.
   s.prefix_header_file = 'SignalCoreKit/SCKPrefix.h'
   s.xcconfig = { 'OTHER_CFLAGS' => '$(inherited) -DSQLITE_HAS_CODEC' }
 
-  s.dependency 'CocoaLumberjack'
   s.dependency 'OpenSSL-Universal'
 
   s.test_spec 'Tests' do |test_spec|
