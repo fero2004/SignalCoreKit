@@ -18,7 +18,7 @@ A Swift & Objective-C library used by other Signal libraries.
   s.homepage         = "https://github.com/signalapp/SignalCoreKit"
   s.license          = 'GPLv3'
   s.author           = { "iOS Team" => "ios@signal.org" }
-  s.source           = { :git => "https://github.com/signalapp/SignalCoreKit.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/fero2004/SignalCoreKit.git", :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/signalapp'
 
   s.platform     = :ios, '10.0'
@@ -31,7 +31,7 @@ A Swift & Objective-C library used by other Signal libraries.
   s.prefix_header_file = 'SignalCoreKit/SCKPrefix.h'
   s.xcconfig = { 'OTHER_CFLAGS' => '$(inherited) -DSQLITE_HAS_CODEC' }
   
-  s.ios.vendored_frameworks = '$(PROJECT_DIR)/MNCSdk/Libs/CocoaLumberjack.framework'
+  s.vendored_frameworks = '$(PROJECT_DIR)/MNCSdk/Libs/CocoaLumberjack.framework'
   s.dependency 'OpenSSL-Universal'
   
   s.test_spec 'Tests' do |test_spec|
